@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mini Habits: Smaller Habits, Bigger Results"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textSize="30dp"
+            android:textColor="@color/black"
+            android:id="@+id/slogon"
+            android:textStyle="bold"
+            android:gravity="center"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="20dp"/>
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:src="@drawable/minihabit"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/slogon"
+            android:layout_marginTop="40dp"
+            android:id="@+id/minihabitimage"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I had experimented with personal development strategies for a decade. When I accidentally started my first mini habit—and the changes I made were actually lasting—I realized the prior strategies I relied on were complete failures. When something works, that which doesn't work is exposed. The science in Mini Habits exposes the predictably inconsistent results of most popular personal growth strategies, and reveals why mini habits are consistent."
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:id="@+id/minihabitarticle"
+            android:layout_marginStart="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/minihabitimage"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:text="Mastery"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/minihabitarticle"
+            android:gravity="center"
+            android:id="@+id/mastery"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="30dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/mastery"
+            android:id="@+id/masteryimage"
+            app:layout_constraintTop_toBottomOf="@+id/mastery"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="In this book, Robert Greene demonstrates that the ultimate form of power is mastery itself. By analyzing the lives of such past masters as Charles Darwin, Benjamin Franklin, Albert Einstein, and Leonard da Vinci, as well as by interviewing nine contemporary masters, including tech guru Paul Graham and animal rights advocate Temple Grandin, Greene debunks our culture’s many myths about genius and distills the wisdom of the ages to reveal the secret to greatness. With this seminal text as a guide, readers will learn how to unlock the passion within and become masters."
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_marginStart="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/masteryimage"/>
+
+
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>
